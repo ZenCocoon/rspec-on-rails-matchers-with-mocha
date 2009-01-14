@@ -9,6 +9,11 @@ Dependencies:
 
   * rspec
   * rspec_on_rails
+  
+Installation:
+-------------
+
+ruby ./script/plugin install git://github.com/joshknowles/rspec-on-rails-matchers.git
 
 Overview
 --------
@@ -128,45 +133,24 @@ In your view spec:
 In your model spec:
 
     describe User do
-      before(:each) do
-        @user = User.new
-      end
 
-      it "should have many posts" do
-        @user.should have_many(:posts)
-      end
+      it { should have_many(:posts) }
+      
+      it { should belong_to(:group) }
 
-      it "should belong to a group" do
-        @user.should belong_to(:group)
-      end
+      it { should validate_presence_of(:email) }
 
-      it do
-        @user.should validate_presence_of(:email)
-      end
+      it { should validate_uniqueness_of(:email) }
 
-      it do
-        @user.should validate_uniqueness_of(:email)
-      end
+      it { should validate_uniqueness_of(:login) }
 
-      it do
-        @user.should validate_uniqueness_of(:login)
-      end
+      it { should validate_presence_of(:login) }
 
-      it do
-        @user.should validate_presence_of(:login)
-      end
+      it { should validate_presence_of(:name) }
 
-      it do
-        @user.should validate_presence_of(:name)
-      end
+      it { should validate_length_of(:password, :between => 4..40) }
 
-      it do
-        @user.should validate_length_of(:password, :between => 4..40)
-      end
-
-      it do
-        @user.should validate_confirmation_of(:password)
-      end
+      it { should validate_confirmation_of(:password) }
 
     end
 
