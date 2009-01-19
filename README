@@ -1,5 +1,5 @@
-rspec-on-rails-matchers
-=======================
+rspec-on-rails-matchers-with-mocha
+==================================
 
 Setup
 ------
@@ -7,13 +7,14 @@ Setup
 Dependencies:
 -------------
 
-  * rspec
+  * rspec 1.1.12
   * rspec_on_rails
+  * mocha
   
 Installation:
 -------------
 
-ruby ./script/plugin install git://github.com/joshknowles/rspec-on-rails-matchers.git
+ruby ./script/plugin install git://github.com/ZenCocoon/rspec-on-rails-matchers-with-mocha.git
 
 Overview
 --------
@@ -154,15 +155,20 @@ In your model spec:
 
     end
 
-Core Contributors
------------------
+Fork Contributor (with mocha and RSpec 1.1.12)
+----------------------------------------------
+
+  * Sébastien Grosjean - ZenCocoon
+
+Core Contributors (from original project)
+-----------------------------------------
 
   * Josh Knowles <joshknowles@gmail.com>
   * Bryan Helmkamp <bryan@brynary.com>
   * Matt Aimonetti <mattaimonetti@gmail.com>
 
-Contributors
--------------
+Contributors (from original project)
+------------------------------------
 
   * ckknight
   * Matt Pelletier

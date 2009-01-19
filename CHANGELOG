@@ -4,6 +4,7 @@ Change Log
 Trunk
 -----
 
+* 2009/01/19 - Update for RSpec 1.1.12 and mocha support
 * 2008/03/02 - Added have_form_putting_to(url_or_path) - Patch by unknown google code submitter
 * 2008/03/02 - Added should observe (Luke Melia)
 * 2008/03/02 - Patched validates_length_of to use within to be consistent with Rails (Matt Pelletier)
